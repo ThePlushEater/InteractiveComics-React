@@ -55,7 +55,7 @@ module ComicPlay {
         NetworkHandler.getOptionFromId(oid, function(option: Option.Option) {
           if (option) {
             NetworkHandler.getPanelsAllFromCId(self.props.cid, function(panels: Panel.Panels) {
-              console.log(panels.filterByOId(option.getId()));
+              //console.log(panels.filterByOId(option.getId()));
               self.setState({comic: self.state.comic, panels: panels.filterByOId(option.getId()), option: option, width: self.state.width, height: self.state.height});
             });
           }

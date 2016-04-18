@@ -46,7 +46,7 @@ module OptionComponent {
         });
         self.group.addChild(self.text1);
         var hit1 = new createjs.Shape();
-        hit1.graphics.beginFill("#000").drawRect(0, 0, self.text1.getMeasuredWidth() * 0.75, self.text1.getMeasuredHeight());
+        hit1.graphics.beginFill("#000").drawRect(0, 0, self.text1.getMeasuredWidth() * 0.5, self.text1.getMeasuredHeight());
         self.text1.hitArea = hit1;
 
         self.text2 = new createjs.Text(self.option.getChoice2Text(), font, "#006ecc");
@@ -58,7 +58,7 @@ module OptionComponent {
         });
         self.group.addChild(self.text2);
         var hit2 = new createjs.Shape();
-        hit2.graphics.beginFill("#000").drawRect(0, 0, self.text2.getMeasuredWidth() * 0.75, self.text2.getMeasuredHeight());
+        hit2.graphics.beginFill("#000").drawRect(0, 0, self.text2.getMeasuredWidth() * 0.5, self.text2.getMeasuredHeight());
         self.text2.hitArea = hit2;
 
 

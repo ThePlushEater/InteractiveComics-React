@@ -225,6 +225,9 @@ module Canvas {
                 color = "#E63C41";
               }
               var text1 = new createjs.Text(option.getChoice1TextOneLine() + " ( " + option.getChoice1Percentage() + "% )", "Bold 16px Coming Soon", color);
+              if (self.choiceIds[i] == 1) {
+                text1 = new createjs.Text(option.getChoice1TextOneLine() + " (v) ( " + option.getChoice1Percentage() + "% )", "Bold 16px Coming Soon", color);
+              }
               text1.set({
                 x: -640,
                 y: -400 + row * 20,
@@ -238,6 +241,9 @@ module Canvas {
                 color = "#E63C41";
               }
               var text2 = new createjs.Text(option.getChoice2TextOneLine() + " ( " + option.getChoice2Percentage() + "% )", "Bold 16px Coming Soon", color);
+              if (self.choiceIds[i] == 2) {
+                text2 = new createjs.Text(option.getChoice2TextOneLine() + " (v) ( " + option.getChoice2Percentage() + "% )", "Bold 16px Coming Soon", color);
+              }
               text2.set({
                 x: -640,
                 y: -400 + row * 20,
