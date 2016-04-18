@@ -237,7 +237,7 @@ module Canvas {
               if (self.choiceIds[i] == 2) {
                 color = "#E63C41";
               }
-              var text2 = new createjs.Text(option.getChoice2TextOneLine() + " ( " + option.getChoice1Percentage() + "% )", "Bold 16px Coming Soon", color);
+              var text2 = new createjs.Text(option.getChoice2TextOneLine() + " ( " + option.getChoice2Percentage() + "% )", "Bold 16px Coming Soon", color);
               text2.set({
                 x: -640,
                 y: -400 + row * 20,

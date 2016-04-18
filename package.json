@@ -3,13 +3,14 @@
   "version": "2.0.1",
   "description": "interactive comic platform",
   "scripts": {
-    "dev": " concurrently  \"npm run dts\" \"npm run tsc:w\" \"npm run watch\" ",
+    "dev": " concurrently  \"npm run dts:w\" \"npm run tsc:w\" \"npm run watch\" ",
     "build": " concurrently \"npm run dts\" \"npm run tsc\" \"npm run publish\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "watch": "webpack -d --watch",
     "publish": "webpack -p",
-    "dts": "tcm -w src"
+    "dts": "tcm src",
+    "dts:w": "tcm -w src"
   },
   "author": "Karl Kim",
   "license": "MIT",
