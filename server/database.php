@@ -12,7 +12,7 @@
     public $host = "localhost";
     public $username = "root";
     public $port = 3306;
-    public $db_name = "interactivecomics";
+    public $db_name = "comic";
   }
 
 	function getConnection() {

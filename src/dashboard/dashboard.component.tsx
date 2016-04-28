@@ -53,7 +53,7 @@ module Dashboard {
               <a>Home</a>
             </div>
             <div>
-              <a>About</a>
+              <a></a>
             </div>
           </nav>
           <hr className={styles.hr}/>

@@ -3,14 +3,15 @@
   "version": "2.0.1",
   "description": "interactive comic platform",
   "scripts": {
-    "dev": " concurrently  \"npm run dts:w\" \"npm run tsc:w\" \"npm run watch\" ",
+    "dev": " concurrently  \"npm run dts:w\" \"npm run tsc:w\" \"npm run watch\" \"npm run server\" ",
     "build": " concurrently \"npm run dts:w\" \"npm run tsc:w\" \"npm run publish\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "watch": "webpack -d --watch",
     "publish": "webpack -p",
     "dts": "tcm src",
-    "dts:w": "tcm -w src"
+    "dts:w": "tcm -w src",
+    "server": "webpack-dev-server"
   },
   "author": "Karl Kim",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "react": "0.14.7",
     "react-dom": "0.14.7",
     "react-fontawesome": "^0.3.3",
+    "typescript": "^1.8.0",
     "underscore": "1.8.3"
   },
   "devDependencies": {
@@ -39,6 +41,7 @@
     "typescript": "1.8.0",
     "typings": "0.7.9",
     "url-loader": "0.5.7",
-    "webpack": "1.12.13"
+    "webpack": "1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }
